@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/e82d497ef8.js" crossorigin="anonymous"></script>
+    <title>Company Corp</title>
+  </head>
+  <body >
+    <section id="navbar" style="background-color: white ;">
+      <div class="navbar border-b-2 border-white">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow   rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>services</a></li>
+              <li><a>About us</a></li>
+              <li><a>testimonial</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost normal-case text-xl">
+            <img src="./assets/svgtopng/logo.png" alt="logo" width="45px">
+          </a>
+        </div>
+        <div class="navbar-center hidden  font-bold lg:flex">
+          <ul class="menu menu-horizontal text-black p-0">
+            <li><a>Home</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#aboutus">About us</a></li>
+            <li><a href="#testimonial">testimonial</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end ">
+          <label for="my-modal" class="btn modal-button text-white">Register Now</label>
+          <input type="checkbox" id="my-modal" class="modal-toggle" />
+          <div class="modal">
+            <div class="modal-box flex  flex-col ">
+              <h3 class="font-bold text-lg  text-center">Register now </h3>
+              <div class="flex flex-col w-full border-opacity-50">
+                <div class="grid h-full">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Your Email</span>
+                    </label>
+                    <label class="input-group">
+                      <span>Email</span>
+                      <input type="email" placeholder="info@site.com" class="input w-full input-bordered" />
+                    </label>
+                    <label class="label">
+                      <span class="label-text">Your Password</span>
+                    </label>
+                    <label class="input-group">
+                      <span>Password</span>
+                      <input type="password" placeholder="password" class="input w-full input-bordered" />
+                    </label>
+                  </div>
+                </div>
+                <div class="divider">OR</div>
+                <h3 class="font-bold text-lg text-center m-4">Use Other Authentication method</h3>
+                <div class="grid h-100">
+                  <div class="btn-group btn-group-vertical gap-5">
+                    <button class="btn"><i class="fa fa-github" aria-hidden="true"></i></button>
+                    <button class="btn bg-blue-600"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-action">
+                <label for="my-modal" class="btn w-full">Submit</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="h-screen" id="banner">
+      <div class="hero min-h-screen" >
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-md">
+            <h1 style="text-shadow: 2px 2px 2px #CE5937;" class="mb-5 text-5xl font-bold">Welcome to Company Corp</h1>
+            <p class="mb-5 text-white">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+            <button id='alert' class="btn">Check Our Services</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="h-screen" id="services">
+      <h1 style="color: #dfdfdf;
+      text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);"  class="m-12 text-6xl text-center  font-bold">Services</h1>
+      <div class="flex justify-center flex-row flex-wrap ">
+        <div class=" m-4 w-96 bg-white shadow-xl">
+        <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+        <div class="card-body text-white">
+          <h2 class="card-title">Oil Change</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, quidem dolorem? Quasi corrupti veritatis ab beatae exercitationem.</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-secondary">Learn more</button>
+          </div>
+        </div>
+       </div>
+        <div class=" m-4 w-96 bg-white shadow-xl">
+        <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+        <div class="card-body text-white">
+          <h2 class="card-title">Filter check</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, quidem dolorem? Quasi corrupti veritatis ab beatae exercitationem.</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-secondary">Learn more</button>
+          </div>
+        </div>
+       </div>
+        <div class=" m-4 w-96 bg-white shadow-xl">
+        <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+        <div class="card-body text-white">
+          <h2 class="card-title">Motor Check</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, quidem dolorem? Quasi corrupti veritatis ab beatae exercitationem.</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-secondary">Learn more</button>
+          </div>
+        </div>
+       </div>
+      </div>
+    </section>
+    <section class='h-screen' id="aboutus">
+      <div class="hero h-screen ">
+        <div class="hero-content text-center flex-col  lg:flex-row-reverse">
+          <div>
+            <h1 style="color: #dfdfdf;
+            text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);" class="text-5xl font-bold">About us</h1>
+            <p class="float-center m-8 text-2xl text-white font-bold">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia maxime, corporis dignissimos corrupti, sit optio facilis consequuntur aliquam nam, itaque iusto id nihil temporibus veniam inventore. Similique aperiam necessitatibus fugiat!
+            Soluta molestias, itaque fugiat inventore sequi rerum necessitatibus cum quae, aliquid perspiciatis dignissimos, rem amet. Maxime quam ipsum suscipit officiis repellat inventore, deleniti recusandae esse hic natus. Architecto, laudantium quam.
+            Eveniet assumenda distinctio blanditiis autem nulla reprehenderit et illum modi, consectetur debitis quae natus fugiat, veniam, beatae optio cumque nihil vitae laboriosam quaerat corporis? Dicta ad laboriosam cum accusantium cumque!.</p>
+            <button id='contact' class="btn btn-secondary">Contact us for more information</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="testimonial" class="h-screen">
+        <h1 style="color: #dfdfdf;
+      text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);" class="text-5xl font-bold text-center">Testimonials</h1>
+      <div class="flex flex-row flex-wrap mt-12">
+      <figure class="snip1390">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg" alt="profile-sample3" class="profile" />
+        <figcaption>
+          <h2>Eleanor Crisp</h2>
+          <h4>UX Design</h4>
+          <blockquote>Dad buried in landslide! Jubilant throngs fill streets! Stunned father inconsolable - demands recount!</blockquote>
+        </figcaption>
+      </figure>
+      <figure class="snip1390">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg" alt="profile-sample3" class="profile" />
+        <figcaption>
+          <h2>Eleanor Crisp</h2>
+          <h4>UX Design</h4>
+          <blockquote>Dad buried in landslide! Jubilant throngs fill streets! Stunned father inconsolable - demands recount!</blockquote>
+        </figcaption>
+      </figure>
+      <figure class="snip1390 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg" alt="profile-sample5" class="profile" />
+        <figcaption>
+          <h2>Gordon Norman</h2>
+          <h4>Accountant</h4>
+          <blockquote>Wormwood : Calvin, how about you? Calvin : Hard to say ma'am. I think my cerebellum has just fused. </blockquote>
+        </figcaption>
+      </figure>
+      <figure class="snip1390"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample6.jpg" alt="profile-sample6" class="profile" />
+        <figcaption>
+          <h2>Sue Shei</h2>
+          <h4>Public Relations</h4>
+          <blockquote>The strength to change what I can, the inability to accept what I can't and the incapacity to tell the difference.</blockquote>
+        </figcaption>
+      </figure>
+    </div>
+    </section>
+      
+
+    <footer  class="footer p-10 text-white">
+      <div>
+        <span class="footer-title">Services</span> 
+        <a class="link link-hover">Branding</a> 
+        <a class="link link-hover">Design</a> 
+        <a class="link link-hover">Marketing</a> 
+        <a class="link link-hover">Advertisement</a>
+      </div> 
+      <div>
+        <span class="footer-title">Company</span> 
+        <a class="link link-hover">About us</a> 
+        <a class="link link-hover">Contact</a> 
+        <a class="link link-hover">Jobs</a> 
+        <a class="link link-hover">Press kit</a>
+      </div> 
+      <div>
+        <span class="footer-title">Legal</span> 
+        <a class="link link-hover">Terms of use</a> 
+        <a class="link link-hover">Privacy policy</a> 
+        <a class="link link-hover">Cookie policy</a>
+      </div> 
+      <div>
+        <span class="footer-title">Newsletter</span> 
+        <div class="form-control w-80">
+          <label class="label">
+            <span class="label-text">Enter your email address</span>
+          </label> 
+          <div class="relative">
+            <input type="text" placeholder="username@site.com" class="input input-bordered w-full pr-16" /> 
+            <button class="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
